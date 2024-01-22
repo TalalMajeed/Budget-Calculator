@@ -1,0 +1,52 @@
+.container-header {
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+}
+
+.container-front-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 1rem;
+    gap: 60px;
+    align-items: center;
+}
+
+.title-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    min-width: 16rem;
+}
+
+.extension-button-header {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.extension-icon-header {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.extension-button-header:hover {
+    transform: scale(1.2);
+}
+
+.search-header {
+    width: 300px;
+    height: 42px;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    padding: 0 20px 0 20px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}

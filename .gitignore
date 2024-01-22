@@ -1,0 +1,24 @@
+# Logs
+budget-calculator-frontend/logs
+budget-calculator-frontend/*.log
+budget-calculator-frontend/npm-debug.log*
+budget-calculator-frontend/yarn-debug.log*
+budget-calculator-frontend/yarn-error.log*
+budget-calculator-frontend/pnpm-debug.log*
+budget-calculator-frontend/lerna-debug.log*
+
+budget-calculator-frontend/node_modules
+budget-calculator-frontend/dist
+budget-calculator-frontend/dist-ssr
+budget-calculator-frontend/*.local
+
+# Editor directories and files
+budget-calculator-frontend/.vscode/*
+budget-calculator-frontend/!.vscode/extensions.json
+budget-calculator-frontend/.idea
+budget-calculator-frontend/.DS_Store
+budget-calculator-frontend/*.suo
+budget-calculator-frontend/*.ntvs*
+budget-calculator-frontend/*.njsproj
+budget-calculator-frontend/*.sln
+budget-calculator-frontend/*.sw?
