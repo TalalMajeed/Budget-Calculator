@@ -2,6 +2,54 @@
     width: 100%;
     height: 100svh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.info-container-panel {
+    width: calc(100% - 90px);
+    padding: 45px 45px 0 45px;
+}
+
+.month-panel {
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.expense-panel {
+    color: var(--primary);
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.expense-container-panel {
+    height: 100%;
+    width: calc(100% - 90px);
+    padding: 0 45px 45px 45px;
+}
+.info-container-panel hr {
+    margin: 20px 0 20px 0;
+}
+
+.previous-panel,
+.income-panel,
+.current-panel {
+    width: 200px;
+}
+
+.previous-container-panel,
+.income-container-panel,
+.current-container-panel {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-panel {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
 }

@@ -60,8 +60,36 @@ function Sidebar(props) {
 }
 
 function Panel() {
-    return <div className="container-panel">Under Construction!</div>;
+    return (
+        <div className="container-panel">
+            <div className="info-container-panel">
+                <div className="month-container-panel">
+                    <div className="month-panel">December 2023</div>
+                </div>
+                <hr />
+                <div className="previous-container-panel">
+                    <div className="previous-panel">Previous Budget: </div>
+                    <span>15000 PKR</span>
+                </div>
+                <div className="income-container-panel">
+                    <div className="income-panel">Monthly Income: </div>
+                    <span>1000 PKR</span>
+                </div>
+                <div className="current-container-panel">
+                    <div className="current-panel">Current Budget: </div>
+                    <span>1500 PKR</span>
+                </div>
+                <hr />
+            </div>
+            <hr />
+            <div className="expense-container-panel">
+                <div className="expense-panel">Expense Details</div>
+                <div className="box-panel">No Expenses at the Moment :/</div>
+            </div>
+        </div>
+    );
 }
+
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <App />
