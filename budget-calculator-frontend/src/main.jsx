@@ -6,9 +6,11 @@ import "./index.css";
 import "./header.css";
 import "./sidebar.css";
 import "./panel.css";
+import "./task.css";
 
 //Importing Icons
 import { SlMenu } from "react-icons/sl";
+import { FaTrash } from "react-icons/fa";
 
 function App() {
     const [width, setWidth] = React.useState(72);
@@ -84,7 +86,28 @@ function Panel() {
             <hr />
             <div className="expense-container-panel">
                 <div className="expense-panel">Expense Details</div>
-                <div className="box-panel">No Expenses at the Moment :/</div>
+                <div className="box-panel">
+                    <Task index={1} info="Car Wash" amount={2000} />
+                    <Task index={2} info="Monthly Groceries" amount={1000} />
+                    <Task index={3} info="Haircut" amount={500} />
+                    <Task index={4} info="Electricity Bill" amount={3000} />
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function Task(props) {
+    return (
+        <div className="container-task">
+            <div className="index-task">{props.index}</div>
+            <div className="info-task">{props.info}</div>
+            <div className="sub-container-task">
+                <div className="status-task">+</div>
+                <div className="amount-task">{props.amount + " PKR"}</div>
+                <button className="delete-task">
+                    <FaTrash className="icon-delete-task" />
+                </button>
             </div>
         </div>
     );
